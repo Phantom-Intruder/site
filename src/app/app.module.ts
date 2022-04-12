@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FormComponent } from './form/form.component';
 import { AboutComponent } from './about/about.component';
+import { CommitFormComponent } from './commit-form/commit-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FormComponent,
-    AboutComponent
+    AboutComponent,
+    CommitFormComponent
   ],
   imports: [
     BrowserModule,
