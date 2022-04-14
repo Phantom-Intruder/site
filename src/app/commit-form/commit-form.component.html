@@ -1,0 +1,22 @@
+<div [hidden]="submitted">
+    <form (ngSubmit)="onSubmit()" #commitForm="ngForm">
+        <div class="form-group">
+            <label for="commitText">Type something!</label>
+            <textarea type="text" class="form-control" id="commitText"
+            required
+            [(ngModel)]="model.commitText" name="commitText" #commitText="ngModel"></textarea>
+            <div [hidden]="commitText.valid || commitText.pristine" class="alert alert-danger">
+                Text is required
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success" [disabled]="!commitForm.form.valid">Submit</button>
+        <button type="button" class="btn btn-default" (click)="commitForm.reset()">Clear</button> 
+    </form>
+    {{model | json}}
+</div>
+
+<div [hidden]="!submitted">
+    <h3>
+        Great! You have just made a commit to the repository of this web page! Don't believe me? Go checkout <a target="_blank" href="https://github.com/Phantom-Intruder/site">the repo</a>
+    </h3>
+</div>
