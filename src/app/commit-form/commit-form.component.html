@@ -1,5 +1,5 @@
 <div [hidden]="submitted">
-    <form (ngSubmit)="onSubmit()" #commitForm="ngForm">
+    <form (ngSubmit)="onSubmit(model)" #commitForm="ngForm">
         <div class="form-group">
             <label for="commitText">Type something!</label>
             <textarea type="text" class="form-control" id="commitText"
