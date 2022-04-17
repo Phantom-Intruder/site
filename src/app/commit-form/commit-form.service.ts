@@ -14,7 +14,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class CommitFormService {
-  apiUrl = 'localhost:3000/commit';  // URL to web api
+  apiUrl = 'http://localhost:3000/commit';  // URL to web api
   private handleError: HandleError;
 
   constructor(private http: HttpClient, httpErrorHandler: HttpErrorHandler) { 

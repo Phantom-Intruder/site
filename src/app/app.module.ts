@@ -10,6 +10,8 @@ import { FormComponent } from './form/form.component';
 import { AboutComponent } from './about/about.component';
 import { CommitFormComponent } from './commit-form/commit-form.component';
 import { CommitsComponent } from './commits/commits.component';
+import { HttpErrorHandler } from './http-error-handler.service';
+import { MessageService } from './message.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,10 @@ import { CommitsComponent } from './commits/commits.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    HttpErrorHandler,
+    MessageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
