@@ -14,7 +14,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class CommitFormService {
-  apiUrl = 'http://localhost:3000/commit';  // URL to web api
+  apiUrl = 'https://site-backend-pi.herokuapp.com/commit';  // URL to web api
   private handleError: HandleError;
 
   constructor(private http: HttpClient, httpErrorHandler: HttpErrorHandler) { 
