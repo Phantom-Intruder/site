@@ -1,0 +1,20 @@
+<div [hidden]="submitted">
+    <form (ngSubmit)="onSubmit(model)" #commitForm="ngForm">
+        <div class="form-group">
+            <label for="commitText">Type something and submit!</label>
+            <textarea type="text" class="form-control" id="commitText"
+            required
+            [(ngModel)]="model.commitText" name="commitText" #commitText="ngModel"></textarea>
+            <div [hidden]="commitText.valid || commitText.pristine" class="alert alert-danger">
+                Text is required
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success" [disabled]="!commitForm.form.valid">Submit</button>
+        &nbsp;
+        <button type="button" class="btn btn-danger" (click)="commitForm.reset()">Clear</button> 
+    </form>
+</div>
+
+<div [hidden]="!submitted">
+    <app-body-text></app-body-text>
+</div>
