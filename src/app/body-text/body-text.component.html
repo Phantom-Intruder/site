@@ -4,8 +4,8 @@
 </h5>
 <br/>
 <h4>How?</h4>
-<p>This Angular frontend is connected to a Node/ExpressJs backend which has an endpoint that recieves POST requests. By submitting, you just created a post request with your commit message.</p>
-<p>The backend recieved the request and ran a few git commands to push your code to the <i>topic/work-on-site</i> branch.</p>
+<p>This Angular frontend is connected to a Node/ExpressJs backend which has an endpoint that receives POST requests. By submitting, you just created a POST request with your commit message.</p>
+<p>The backend received the request and ran a few git commands to push your code to the <i>topic/work-on-site</i> branch.</p>
 <span class="github-btn github-watchers github-btn-large">
     <a class="gh-btn" href="https://github.com/phantom-Intruder/site-backend" rel="noopener noreferrer" target="_blank" aria-label="Watch phantom-Intruder/site-backend on GitHub">
         <span class="gh-ico" aria-hidden="true"></span> <span class="gh-text">Go to backend repo</span> 
@@ -16,7 +16,7 @@
 <br/>
 <br/>
 <h4>So now what?</h4> 
-<p>You are just about to see a full continous integration and deployment pipeline at work.</p>
+<p>You are just about to see a full continuous integration and deployment pipeline at work.</p>
 <p>The branch you just pushed to is set to trigger an Azure DevOps release pipeline on each push. So as you are reading this, a pipeline would have started running.</p>
 <p>This pipeline does three things:</p>
 <ol>
@@ -26,8 +26,8 @@
 </ol>
 <img src="assets/gif/pipeline-run.gif" alt="pipeline">
 <br/><br/>
-<p>Once the pipeline has finished running, you should be able to reload this page and see the text you just entered added below. This isn't something that is fetched dynamically via a database, or placed temporarily using Angular. Instead, it is harcoded into the html of the source.</p>
+<p>Once the pipeline has finished running, you should be able to reload this page and see the text you just entered added below. This isn't something that is fetched dynamically via a database or placed temporarily using Angular. Instead, it is hardcoded into the HTML of the source.</p>
 <br/>
 <div class="alert alert-info">
-    If your changes have not been reflected on the site after a few minutes, it could be due to CloudFront showing a cached version of the page, so please head over to <a href="http://mewantha.net.s3-website-us-east-1.amazonaws.com">bucket website endpoint</a>.
+    If your changes have not been reflected on the site after a few minutes, it could be due to CloudFront showing a cached version of the page, so please head over to <a href="http://mewantha.net.s3-website-us-east-1.amazonaws.com">S3 bucket website endpoint</a>.
 </div>
