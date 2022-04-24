@@ -1,0 +1,32 @@
+<br/>
+<h5>
+    Great! You have just made a commit to the repository of this web page! Don't believe me? Go checkout <a target="_blank" href="https://github.com/Phantom-Intruder/site/commits/topic/work-on-site">the repo.</a>
+</h5>
+<br/>
+<h4>How?</h4>
+<p>This Angular frontend is connected to a Node/ExpressJs backend which has an endpoint that recieves POST requests. By submitting, you just created a post request with your commit message.</p>
+<p>The backend recieved the request and ran a few git commands to push your code to the <i>topic/work-on-site</i> branch.</p>
+<span class="github-btn github-watchers github-btn-large">
+    <a class="gh-btn" href="https://github.com/phantom-Intruder/site-backend" rel="noopener noreferrer" target="_blank" aria-label="Watch phantom-Intruder/site-backend on GitHub">
+        <span class="gh-ico" aria-hidden="true"></span> <span class="gh-text">Go to backend repo</span> 
+    </a>
+    <a class="gh-count" href="https://github.com/phantom-Intruder/site-backend/watchers" rel="noopener noreferrer" target="_blank" aria-hidden="true">
+
+    </a>
+</span>
+<br/>
+<br/>
+<h4>So now what?</h4> 
+<p>You are just about to see a full continous integration and deployment pipeline at work.</p>
+<p>The branch you just pushed to is set to trigger an Azure DevOps release pipeline on each push. So as you are reading this, a pipeline would have started running.</p>
+<p>This pipeline does three things:</p>
+<ol>
+    <li>Set up the environment and install the necessary packages</li>
+    <li>Build the application from the raw source code</li>
+    <li>Deploy the application</li>
+</ol>
+<p>Once the pipeline has finished running, you should be able to reload this page and see the text you just entered added below. This isn't something that is fetched dynamically via a database, or placed temporarily using Angular. Instead, it is harcoded into the html of the source.</p>
+<br/>
+<div class="alert alert-info">
+    If your changes have not been reflected on the site after a few minutes, it could be due to CloudFront showing a cached version of the page, so please head over to <a href="http://mewantha.net.s3-website-us-east-1.amazonaws.com">bucket website endpoint</a>.
+</div>
